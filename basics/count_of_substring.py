@@ -27,7 +27,7 @@ def count_substring(statement, substring):
 if __name__ == "__main__":
     # Get user input for the string and substring
     statement = input("Enter a string: ")
-    substring = input("enter a substring to search for: ")
+    substring = input("Enter a substring to search for: ")
 
     # Call the function to find the count of occurrences
     count = count_substring(statement, substring)
