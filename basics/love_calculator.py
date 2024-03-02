@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+
+
+
 def love_calculator(name1, name2):
     """
     Calculates the love score between two names.
@@ -29,3 +32,4 @@ def love_calculator(name1, name2):
 name1 = input("Enter your name: ")
 name2 = input("Enter his/her name: ")
 print(love_calculator(name1, name2))
+print("\n**DISCLAIMER:** This love calculator is for exercises purposes only and does not reflect real-life compatibility. Don't believe that sort of SH*T")
