@@ -24,18 +24,19 @@ if size in ("s", "m", "l"): # Check if size is one of the valid options (S, M or
 else:
     print("You have only three options. Please choose one (S, M or L)") # Handle invalid input for Pizza size
 
-# Ask if the user wants pepperoni
-ad_pepperoni = input("Do you want pepperoni(Y/N)? ").lower() # Convert input to lowercase for case-insensitive comparison
-
 # Add pepperoni cost based on size
-if add_pepperoni in ("y", "n"): # Check if input is valid (Y or N)
-    if add_pepperoni == "y":
-        if size == "s":
-            bill += 2
-        else:
-            bill += 5
-else:
-    print("Invalid input. Please answer Y or N") # Handle invalid input for pepperoni
+a = True
+while(a):
+    add_pepperoni = input("Do you want pepperoni(Y/N)? ").lower() # Convert input to lowercase for case-insensitive comparison
+    if add_pepperoni in ("y", "n"): # Check if input is valid (Y or N)
+        if add_pepperoni == "y":
+            if size == "s":
+                bill += 2
+            else:
+                bill += 5
+        a = False
+    else:
+        print("Invalid input. Please answer Y or N") # Handle invalid input for pepperoni
 
 # ask if the user wants extra cheese
 extra_cheese = input("Do you want extra cheese(Y/N)? ").lower() # Convert input to lowercase for case-insensitive comparison
